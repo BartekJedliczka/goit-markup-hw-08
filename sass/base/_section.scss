@@ -1,0 +1,7 @@
+.section {
+  padding-top: 94px;
+
+  &:not(.our-strengths) {
+    padding-bottom: 94px;
+  }
+}

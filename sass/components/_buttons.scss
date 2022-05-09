@@ -1,0 +1,36 @@
+.modal-btn {
+  padding: 10px 41px 10px 42px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background: var(--blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.newsletter__btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  width: 200px;
+  background: var(--blue-color);
+  color: var(--white-color);
+  padding: 10px 27px 10px 42px;
+  border-style: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.newsletter__icon {
+  fill: var(--white-bgc);
+  margin-left: 24px;
+}
