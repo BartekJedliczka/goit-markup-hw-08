@@ -1,13 +1,30 @@
 .main-header {
   padding-bottom: 30px;
-  max-width: 696px;
+  max-width: 365px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
+  font-size: 26px;
+  line-height: 1.615;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.364;
+  }
 }
+
+// .main-header {
+//   padding-bottom: 30px;
+//   max-width: 696px;
+//   font-weight: 900;
+//   font-size: 44px;
+//   line-height: 1.364;
+//   text-align: center;
+//   letter-spacing: 0.06em;
+//   text-transform: uppercase;
+// }
 .secondary-header {
   padding-bottom: 50px;
   font-weight: 700;
@@ -17,15 +34,15 @@
   letter-spacing: 0.03em;
 }
 
-.third-header {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
+// .third-header {
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.143;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+// }
 
-.footer-header {
-  margin-bottom: 20px;
-  color: var(--white-color);
-}
+// .footer-header {
+//   margin-bottom: 20px;
+//   color: var(--white-color);
+// }
