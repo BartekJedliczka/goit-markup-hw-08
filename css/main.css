@@ -47,6 +47,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -187,7 +189,6 @@ img {
 }
 
 .social-list {
-  margin-bottom: 30px;
   display: flex;
   justify-content: center;
 }
@@ -665,21 +666,41 @@ img {
   background-color: var(--grey-bgc);
 }
 
-.team-list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .team-list__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767.9px) {
+  .team-list .team-list__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    flex-basis: calc((100% - 30px * 2) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list {
+    flex-basis: calc((100% - 30px * 4) / 4);
+  }
+}
+
+.team-list__wrapper {
+  padding: 30px 10px;
 }
 
 .team-list__name, .team-list__job {
@@ -690,30 +711,43 @@ img {
 }
 
 .team-list__name {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
 }
 
 .team-list__job {
   color: var(--grey-color);
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .customer-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
-.customer-list__item:not(:last-child) {
-  margin-right: 30px;
+.customer-list__item {
+  flex-basis: calc(100% / 2 - 30px);
+  margin: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .customer-list__item {
+    flex-basis: calc((100% - 30px * 3) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customer-list__item {
+    flex-basis: calc((100% - 30px * 6) / 6);
+  }
 }
 
 .customer-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 100%;
   height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;

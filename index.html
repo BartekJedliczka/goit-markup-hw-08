@@ -164,18 +164,23 @@
       </section>
 
       <!-- Team-->
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="secondary-header">Nasz zespół</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img
-                class="team-list__photo"
-                src="./images/team/John_Doe_1.jpg"
-                alt="John Doe 1 photo"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/team/mobile/product-mobile.jpg , ./images/team/mobile/product@2x-mobile.jpg" media="(min-width: 320px) and (max-width: 767px)"/>
+                <source srcset="./images/team/tablet/product-tablet.jpg , ./images/team/tablet/product@2x-tablet.jpg" media="(min-width: 768px) and (max-width: 1199px)"/>
+                <source srcset="./images/team/desktop/product-desktop.jpg , ./images/team/desktop/product@2x-desktop.jpg" media="(min-width: 1200px)"/>
+
+                <img
+                  class="team-list__photo"
+                  src="./images/team/mobile/product-mobile.jpg"
+                  alt="John Doe 1 photo"
+
+                />
+              </picture>
               <div class="team-list__wrapper">
                 <h3 class="third-header team-list__name">John Doe</h3>
                 <p class="team-list__job">Product Designer</p>
@@ -212,13 +217,17 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
+              <picture>
+                <source srcset="./images/team/mobile/frontend-mobile.jpg, ./images/team/mobile/frontend@2x-mobile.jpg" media="(min-width: 320px) and (max-width: 767px)"/>
+                <source srcset="./images/team/tablet/frontend-tablet.jpg, ./images/team/tablet/frontend@2x-tablet.jpg" media="(min-width: 768px) and (max-width: 1199px)" />
+                <source srcset="./images/team/desktop/frontend-desktop.jpg, ./images/team/desktop/frontend@2x-desktop.jpg" media="(min-width: 1200px)" />
+                <img
                 class="team-list__photo"
-                src="./images/team/John_Doe_2.jpg"
+                src="./images/team/mobile/frontend-mobile.jpg"
                 alt="John Doe 2 photo"
-                width="270"
-                height="260"
+
               />
+              </picture>
               <div class="team-list__wrapper">
                 <h3 class="third-header team-list__name">John Doe</h3>
                 <p class="team-list__job">Frontend Developer</p>
@@ -255,13 +264,17 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
+              <picture>
+                <source srcset="./images/team/mobile/marketing-mobile.jpg , ./images/team/mobile/marketing@2x-mobile.jpg" media="(min-width: 320px) and (max-width: 767px)" />
+                <source srcset="./images/team/tablet/marketing-tablet.jpg , ./images/team/tablet/marketing@2x-tablet.jpg" media="(min-width: 768px) and (max-width: 1199px)" />
+                <source srcset="./images/team/desktop/marketing-desktop.jpg , ./images/team/desktop/marketing@2x-desktop.jpg" media="(min-width: 1200px)" />
+                <img
                 class="team-list__photo"
-                src="./images/team/John_Doe_3.jpg"
-                alt="John Doe 3 photo"
-                width="270"
-                height="260"
-              />
+                src="./images/team/mobile/marketing-mobile.jpg"
+                alt="John Doe 4 photo"
+                />
+            </picture>
+
               <div class="team-list__wrapper">
                 <h3 class="third-header team-list__name">John Doe</h3>
                 <p class="team-list__job">Marketing</p>
@@ -298,13 +311,16 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
+              <picture>
+                <source srcset="./images/team/mobile/designer-mobile.jpg , ./images/team/mobile/designer@2x-mobile.jpg" media="(min-width: 320px) and (max-width: 767px)" />
+                <source srcset="./images/team/tablet/designer-tablet.jpg , ./images/team/tablet/designer@2x-tablet.jpg" media="(min-width: 768px) and (max-width: 1199px)" />
+                <source srcset="./images/team/desktop/designer-desktop.jpg , ./images/team/desktop/designer@2x-desktop.jpg" media="(min-width: 1200px)" />
+                <img
                 class="team-list__photo"
-                src="./images/team/John_Doe_4.jpg"
+                src="./images/team/mobile/designer-mobile.jpg"
                 alt="John Doe 4 photo"
-                width="270"
-                height="260"
-              />
+                />
+            </picture>
               <div class="team-list__wrapper">
                 <h3 class="third-header team-list__name">John Doe</h3>
                 <p class="team-list__job">UI Designer</p>
@@ -343,10 +359,10 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
 
     <!-- Customers  -->
-    <!-- <section class="customer section">
+    <section class="customer section">
       <div class="container">
         <h2 class="secondary-header">Nasi klienci</h2>
         <ul class="customer-list list">
@@ -394,7 +410,7 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
     <!-- Footer -->
     <!-- <footer class="footer">
