@@ -13,24 +13,38 @@
   cursor: pointer;
 }
 
-.newsletter__btn {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
+.btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 41px;
+  width: 200px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  width: 200px;
-  background: var(--blue-color);
-  color: var(--white-color);
-  padding: 10px 27px 10px 42px;
-  border-style: none;
-  border-radius: 4px;
+  text-align: center;
+  letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  background-color: var(--blue-color);
+  color: var(--white-color);
   cursor: pointer;
 }
+
 .newsletter__icon {
   fill: var(--white-bgc);
   margin-left: 24px;
+  margin-top: 3px;
+}
+
+.newsletter__btn {
+  position: relative;
+  padding-right: 76px;
+  outline: none;
+
+  @media screen and (max-width: 1199.9px) {
+    margin-top: 20px;
+  }
 }
