@@ -27,12 +27,10 @@
           >
           <ul class="navigation-list list">
             <li class="navigation-list__item">
-              <a class="navigation-list__link link active" href="./index.html"
-                >Agencja</a
-              >
+              <a class="navigation-list__link link active" href="./index.html">Agencja</a>
             </li>
             <li class="navigation-list__item">
-              <a class="navigation-list__link link " href="./portfolio.html">Portfolio</a>
+              <a class="navigation-list__link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="navigation-list__item">
               <a class="navigation-list__link link" href="#">Kontakty</a>
@@ -58,9 +56,60 @@
           </li>
         </ul>
       </div>
+
+      <button type="button" class="mobile-menu-burger" data-menu-open>
+        <svg class="mobile-menu-btn__icon" width="30" height="30">
+          <use href="./images/svg/icons.svg#icon-mobile-menu"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu" data-menu>
+        <button type="button" class="mobile-menu-close" data-menu-close>
+          <svg class="mobile-menu-btn__icon" width="30" height="30">
+            <use href="./images/svg/icons.svg#icon-mobile-close"></use>
+          </svg>
+        </button>
+            <div class="mobile-navigation">
+                <ul class="mobile-navigation-list list">
+                    <li class="mobile-navigation-list__item"><a class="mobile-navigation-list__link link active"
+                            href="./index.html">Agencja</a></li>
+                    <li class="mobile-navigation-list__item"><a class="mobile-navigation-list__link link"
+                            href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="mobile-navigation-list__item"><a class="mobile-navigation-list__link link"
+                            href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="mobile-addres-list list">
+                <li class="mobile-addres-list__item">
+                    <a class="mobile-addres-list__link mobile-addres-list__link-phone link" href="tel:+48111111111">+48
+                        111 111 111</a>
+                <li class="mobile-addres-list__item">
+                    <a class="mobile-addres-list__link mobile-addres-list__link-mail link"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                </li>
+            </ul>
+
+            <ul class="header-social-list list">
+                <li class="header-social-list__item"><a class="header-social-list__link link" href="#">Instagram</a>
+                </li>
+                <li class="header-social-list__item"><a class="header-social-list__link link" href="#" target="_blank"
+                        rel="noopener noreferrer">Twitter</a></li>
+                <li class="header-social-list__item"><a class="header-social-list__link link" href="#" target="_blank"
+                        rel="noopener noreferrer">Facebook</a></li>
+                <li class="header-social-list__item"><a class="header-social-list__link link" href="#" target="_blank"
+                        rel="noopener noreferrer">Linkedin</a></li>
+            </ul>
+      </div>
+
+
+
     </header>
 
-      <!-- HERO -->
+    <!-- HERO -->
+    <main>
       <section class="hero">
         <div class="container">
           <h1 class="main-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
@@ -170,15 +219,32 @@
           <ul class="team-list list">
             <li class="team-list__item">
               <picture>
-                <source srcset="./images/team/mobile/product-mobile.jpg , ./images/team/mobile/product@2x-mobile.jpg" media="(min-width: 320px) and (max-width: 767px)"/>
-                <source srcset="./images/team/tablet/product-tablet.jpg , ./images/team/tablet/product@2x-tablet.jpg" media="(min-width: 768px) and (max-width: 1199px)"/>
-                <source srcset="./images/team/desktop/product-desktop.jpg , ./images/team/desktop/product@2x-desktop.jpg" media="(min-width: 1200px)"/>
+                <source
+                  srcset="
+                    ./images/team/mobile/product-mobile.jpg,
+                    ./images/team/mobile/product@2x-mobile.jpg
+                  "
+                  media="(min-width: 320px) and (max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/product-tablet.jpg,
+                    ./images/team/tablet/product@2x-tablet.jpg
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop/product-desktop.jpg,
+                    ./images/team/desktop/product@2x-desktop.jpg
+                  "
+                  media="(min-width: 1200px)"
+                />
 
                 <img
                   class="team-list__photo"
                   src="./images/team/mobile/product-mobile.jpg"
                   alt="John Doe 1 photo"
-
                 />
               </picture>
               <div class="team-list__wrapper">
@@ -218,15 +284,32 @@
             </li>
             <li class="team-list__item">
               <picture>
-                <source srcset="./images/team/mobile/frontend-mobile.jpg, ./images/team/mobile/frontend@2x-mobile.jpg" media="(min-width: 320px) and (max-width: 767px)"/>
-                <source srcset="./images/team/tablet/frontend-tablet.jpg, ./images/team/tablet/frontend@2x-tablet.jpg" media="(min-width: 768px) and (max-width: 1199px)" />
-                <source srcset="./images/team/desktop/frontend-desktop.jpg, ./images/team/desktop/frontend@2x-desktop.jpg" media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/team/mobile/frontend-mobile.jpg,
+                    ./images/team/mobile/frontend@2x-mobile.jpg
+                  "
+                  media="(min-width: 320px) and (max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/frontend-tablet.jpg,
+                    ./images/team/tablet/frontend@2x-tablet.jpg
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop/frontend-desktop.jpg,
+                    ./images/team/desktop/frontend@2x-desktop.jpg
+                  "
+                  media="(min-width: 1200px)"
+                />
                 <img
-                class="team-list__photo"
-                src="./images/team/mobile/frontend-mobile.jpg"
-                alt="John Doe 2 photo"
-
-              />
+                  class="team-list__photo"
+                  src="./images/team/mobile/frontend-mobile.jpg"
+                  alt="John Doe 2 photo"
+                />
               </picture>
               <div class="team-list__wrapper">
                 <h3 class="third-header team-list__name">John Doe</h3>
@@ -265,15 +348,33 @@
             </li>
             <li class="team-list__item">
               <picture>
-                <source srcset="./images/team/mobile/marketing-mobile.jpg , ./images/team/mobile/marketing@2x-mobile.jpg" media="(min-width: 320px) and (max-width: 767px)" />
-                <source srcset="./images/team/tablet/marketing-tablet.jpg , ./images/team/tablet/marketing@2x-tablet.jpg" media="(min-width: 768px) and (max-width: 1199px)" />
-                <source srcset="./images/team/desktop/marketing-desktop.jpg , ./images/team/desktop/marketing@2x-desktop.jpg" media="(min-width: 1200px)" />
-                <img
-                class="team-list__photo"
-                src="./images/team/mobile/marketing-mobile.jpg"
-                alt="John Doe 4 photo"
+                <source
+                  srcset="
+                    ./images/team/mobile/marketing-mobile.jpg,
+                    ./images/team/mobile/marketing@2x-mobile.jpg
+                  "
+                  media="(min-width: 320px) and (max-width: 767px)"
                 />
-            </picture>
+                <source
+                  srcset="
+                    ./images/team/tablet/marketing-tablet.jpg,
+                    ./images/team/tablet/marketing@2x-tablet.jpg
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop/marketing-desktop.jpg,
+                    ./images/team/desktop/marketing@2x-desktop.jpg
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="team-list__photo"
+                  src="./images/team/mobile/marketing-mobile.jpg"
+                  alt="John Doe 4 photo"
+                />
+              </picture>
 
               <div class="team-list__wrapper">
                 <h3 class="third-header team-list__name">John Doe</h3>
@@ -312,15 +413,33 @@
             </li>
             <li class="team-list__item">
               <picture>
-                <source srcset="./images/team/mobile/designer-mobile.jpg , ./images/team/mobile/designer@2x-mobile.jpg" media="(min-width: 320px) and (max-width: 767px)" />
-                <source srcset="./images/team/tablet/designer-tablet.jpg , ./images/team/tablet/designer@2x-tablet.jpg" media="(min-width: 768px) and (max-width: 1199px)" />
-                <source srcset="./images/team/desktop/designer-desktop.jpg , ./images/team/desktop/designer@2x-desktop.jpg" media="(min-width: 1200px)" />
-                <img
-                class="team-list__photo"
-                src="./images/team/mobile/designer-mobile.jpg"
-                alt="John Doe 4 photo"
+                <source
+                  srcset="
+                    ./images/team/mobile/designer-mobile.jpg,
+                    ./images/team/mobile/designer@2x-mobile.jpg
+                  "
+                  media="(min-width: 320px) and (max-width: 767px)"
                 />
-            </picture>
+                <source
+                  srcset="
+                    ./images/team/tablet/designer-tablet.jpg,
+                    ./images/team/tablet/designer@2x-tablet.jpg
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop/designer-desktop.jpg,
+                    ./images/team/desktop/designer@2x-desktop.jpg
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="team-list__photo"
+                  src="./images/team/mobile/designer-mobile.jpg"
+                  alt="John Doe 4 photo"
+                />
+              </picture>
               <div class="team-list__wrapper">
                 <h3 class="third-header team-list__name">John Doe</h3>
                 <p class="team-list__job">UI Designer</p>
@@ -414,11 +533,12 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer__container container ">
+      <div class="footer__container container">
         <div class="footer__wrapper">
           <div class="footer__web">
             <a class="footer-logo logo link" href="index.html"
-              ><span class="logo-blue-theme">Web</span><span class="logo-dark-theme">Studio</span></a
+              ><span class="logo-blue-theme">Web</span
+              ><span class="logo-dark-theme">Studio</span></a
             >
             <address class="address">
               <ul class="address-list list">
@@ -431,7 +551,7 @@
                   </a>
                 </li>
                 <li class="address-list__item">
-                  <a class="address-list__link  link" href="mailto:info@example.com"
+                  <a class="address-list__link link" href="mailto:info@example.com"
                     >info@example.com</a
                   >
                 </li>
@@ -442,48 +562,48 @@
             </address>
           </div>
 
-        <!-- Social -->
-        <div class="footer__social">
-          <h3 class="third-header footer__third-header">dołącz do nas</h3>
-          <ul class="social-list list">
-            <li class="social-list__item">
-              <a href="#" class="social-list__link">
-                <svg class="social-icon" width="20" height="20">
-                  <use href="./images/svg/icon.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="#" class="social-list__link">
-                <svg class="social-icon" width="20" height="20">
-                  <use href="./images/svg/icon.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="#" class="social-list__link">
-                <svg class="social-icon" width="20" height="20">
-                  <use href="./images/svg/icon.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="#" class="social-list__link">
-                <svg class="social-icon" width="20" height="20">
-                  <use href="./images/svg/icon.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <!-- Social -->
+          <div class="footer__social">
+            <h3 class="third-header footer__third-header">dołącz do nas</h3>
+            <ul class="social-list list">
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <svg class="social-icon" width="20" height="20">
+                    <use href="./images/svg/icon.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <svg class="social-icon" width="20" height="20">
+                    <use href="./images/svg/icon.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <svg class="social-icon" width="20" height="20">
+                    <use href="./images/svg/icon.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <svg class="social-icon" width="20" height="20">
+                    <use href="./images/svg/icon.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
 
         <!-- Newsletter -->
         <div class="footer__newsletter">
           <h3 class="third-header footer__third-header">Zapisz sie do newslettera</h3>
           <form class="newsletter__form">
             <label class="newsletter__label">
-              <input class="newsletter__email" type="email" name="email" placeholder="E-mail">
+              <input class="newsletter__email" type="email" name="email" placeholder="E-mail" />
             </label>
             <button class="btn newsletter__btn" type="submit">
               Zapisz się
@@ -497,7 +617,7 @@
     </footer>
 
     <!-- Window Modal -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close-btn" data-modal-close>
           <svg class="modal__close-btn-icon" width="11" height="11">
@@ -536,10 +656,21 @@
           <label class="modal-form__field"
             >Komentarz
             <span class="modal-form__input-wrapper">
-              <textarea class="modal-form__message" name="user-comment" cols= "30" rows="10" placeholder="Wprowadź tekst"></textarea>
+              <textarea
+                class="modal-form__message"
+                name="user-comment"
+                cols="30"
+                rows="10"
+                placeholder="Wprowadź tekst"
+              ></textarea>
             </span>
           </label>
-          <input class="modal-form__policy visually-hidden" type="checkbox" id="user-policy" name="policy" />
+          <input
+            class="modal-form__policy visually-hidden"
+            type="checkbox"
+            id="user-policy"
+            name="policy"
+          />
           <label class="modal-form__policy-text" for="user-policy"
             >Oświadczam iż akceptuję <a href=" #" class="modal-form__policy-link">Regulamin</a> i
             <a href=" #" class="modal-form__policy-link">Politykę Prywatności.</a>
@@ -547,12 +678,9 @@
           <button class="modal-form__btn" type="submit">Wyślij</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
-  </body>
-</html>
-
   </body>
 </html>
