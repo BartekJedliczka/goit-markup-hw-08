@@ -7,21 +7,6 @@
   line-height: 1.667;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-right: 93px;
-
-  @media screen and (min-width: 768px) {
-    margin-right: 83px;
-  }
-
-  @media screen and (max-width: 1199.9px) {
-    margin: auto;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-right: 93px;
-    font-size: 26px;
-    line-height: 1.192;
-  }
 }
 .logo-blue-theme {
   color: var(--blue-color);
@@ -32,3 +17,23 @@
 .logo-dark-theme {
   color: var(--white-color);
 }
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 83px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.192;
+  }
+}
+
+// @media screen and (max-width: 1199.9px) {
+//   .logo {
+//     margin: auto;
+//   }
+// }

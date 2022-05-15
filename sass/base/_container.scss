@@ -3,6 +3,11 @@
   margin: 0 auto;
   padding: 0 15px;
   align-items: center;
+
+  .porfolio-filters & {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -20,8 +25,15 @@
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
+    header & {
+      display: flex;
+      padding-top: 24px;
+      padding-bottom: 25px;
+      align-items: center;
+    }
   }
 }
+
 /*.container {
   width: 1200px;
   margin: 0 auto;
