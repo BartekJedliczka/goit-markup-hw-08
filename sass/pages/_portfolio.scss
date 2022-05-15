@@ -68,9 +68,9 @@
         1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 
-    // &:nth-child(n + 7) {
-    //   margin-bottom: 0;
-    // }
+    &:nth-child(n + 7) {
+      margin-bottom: 0;
+    }
   }
   &__overlay {
     position: absolute;
@@ -120,11 +120,5 @@
     line-height: 1.875;
     letter-spacing: 0.03em;
     color: var(--second-colorFont);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .project-list__item:nth-child(n + 8) {
-    margin-bottom: 0;
   }
 }
